@@ -14,7 +14,7 @@ Then click "Custom installation"
 
 
 1. Select your installation target and make sure it has no partitions (except unallocated space)
-2. Click the New and then the Apply button.
+2. Click the ```New``` and then the ```Apply``` button.
 You should now have four partitions: Recovery, System (ESP), MSR, and Primary.
 
 3. Select each of the System, MSR, and Primary partitions in turn and click the Delete button to delete these partitions. Leave the Recovery partition in place.
