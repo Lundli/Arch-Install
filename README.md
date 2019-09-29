@@ -18,14 +18,14 @@ Then click "Custom installation"
 You should now have four partitions: Recovery, System (ESP), MSR, and Primary.
 
 3. Select each of the System, MSR, and Primary partitions in turn and click the Delete button to delete these partitions. Leave the Recovery partition in place.
-4. Press Shift+F10 to open the Command Prompt
-5. Type diskpart.exe and press Enter to open the disk partitioning tool
-6. Type list disk and press Enter to list out your disks
-7. Type select disk n where n is the number for the disk you want to install to as identified by the above command and press Enter
-8. Type create partition efi size=600 where 600 is the desired size of the ESP in Megabytes (MiB), and press Enter
-9. Type format quick fs=fat32 label=System and press Enter to format the ESP
-10. Type exit and press Enter to exit the disk partitioning tool
-11. Type exit and press Enter again to exit the Command Prompt
+4. Press ```Shift+F10``` to open the Command Prompt
+5. Type ```diskpart.exe``` and press ```Enter``` to open the disk partitioning tool
+6. Type ```list disk``` and press ```Enter``` to list out your disks
+7. Type ```select disk n``` where n is the number for the disk you want to install to as identified by the above command and press Enter
+8. Type ```create partition efi size=600``` where 600 is the desired size of the ESP in Megabytes (MiB), and press Enter
+9. Type ```format quick fs=fat32 label=System``` and press ```Enter``` to format the ESP
+10. Type ```exit``` and press ```Enter``` to exit the disk partitioning tool
+11. Type ```exit``` and press ```Enter``` again to exit the Command Prompt
 
 You should now be back in the graphical Windows Setup partitioning tool where nothing has changed since the last time you looked at it.
 
@@ -33,6 +33,8 @@ Click the Refresh button to detect your partition changes
 You should now have a disk with a default Windows Recovery tools partition, a 500 MiB UEFI System Partition, and some unallocated space for your Windows installation.
 
 Select the unallocated space from the disk list and click the New button to automatically recreate the MSR and System partition in the remaining space
+
+From here you can continue your installation as normal.
 
 **NOTE:** This list is copied from ([source](https://www.ctrl.blog/entry/how-to-esp-windows-setup.html))
 
