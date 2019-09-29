@@ -1,6 +1,6 @@
 # Arch-Install
 
-Installation on my Huawei Matebook X Pro (512 GB storage, 16 GB RAM, Nvidia MX150)
+Installation on my Huawei Matebook X Pro (512 GB storage, 16 GB RAM, Nvidia MX150), Dual Boot with Windows10.
 
 ## Dual boot with Windows10
 (Feel free to skip this step if you don't want dual-boot)
