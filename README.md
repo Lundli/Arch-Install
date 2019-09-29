@@ -30,7 +30,7 @@ You should now have four partitions: Recovery, System (ESP), MSR, and Primary.
 You should now be back in the graphical Windows Setup partitioning tool where nothing has changed since the last time you looked at it.
 
 Click the Refresh button to detect your partition changes
-You should now have a disk with a default Windows Recovery tools partition, a 500 MiB UEFI System Partition, and some unallocated space for your Windows installation.
+You should now have a disk with a default Windows Recovery tools partition, a 600 MiB UEFI System Partition, and some unallocated space for your Windows installation.
 
 Select the unallocated space from the disk list and click the New button to automatically recreate the MSR and System partition in the remaining space
 
