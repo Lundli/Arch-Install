@@ -44,6 +44,7 @@ From here you can continue your installation as normal.
 
 ## Make partitions
 Using the program GParted I resized the disk into several partitions (in addition to those Windows already has made)
+Ensure that they are formatted into format **.ext4**
 
 * Home partition (140gb)
 * Arch Partition (100gb)
@@ -57,3 +58,34 @@ Using the program GParted I resized the disk into several partitions (in additio
 
 Use a program such as Rufus (for Windows) to burn the ISO to a USB stick.
 
+
+
+#------------- In progress -------------#
+
+Boot into USB-Key
+
+Mounting disks and swap
+
+```setfont latarcyrheb-sun32```
+
+use ```wifi-menu``` to get online
+```# timedatectl set-ntp true```
+
+```# mkswap /dev/path/to/partition```
+
+```# mount /dev/path/to /mnt```
+
+```# mkdir /mnt/home```
+
+```# mount /dev/path/home /mnt/home```
+
+```# swapon /dev/path/to```
+
+```# mkdir /mnt/boot```
+
+```# mount /dev/nvme0n1p1 /mnt/bootc```
+
+
+```# pacstrap /mnt base base-devel```
+
+```# genfstab -U /mnt >> /mnt/etc/fstab```
