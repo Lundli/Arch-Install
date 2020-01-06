@@ -89,3 +89,6 @@ use ```wifi-menu``` to get online
 ```# pacstrap /mnt base base-devel```
 
 ```# genfstab -U /mnt >> /mnt/etc/fstab```
+
+
+[Audio Fix](https://aymanbagabas.com/2018/07/23/archlinux-on-matebook-x-pro.html)
